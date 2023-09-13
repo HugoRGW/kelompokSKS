@@ -21,7 +21,7 @@
                         <a href="widgets.html"> <i class="menu-icon ti-tag"></i>Data Kategori </a>
                     </li>
                      <li>
-                        <a href="widgets.html"> <i class="menu-icon ti-text"></i>Syarat & Ketentuan </a>
+                        <a href="{{ route('syarat-dan-ketentuan') }}"> <i class="menu-icon ti-text"></i>Syarat & Ketentuan </a>
                     </li>
                     <li>
                         <a href="widgets.html"> <i class="menu-icon ti-id-badge"></i>Data Pribadi </a>
