@@ -72,9 +72,9 @@
     <!-- Right Panel -->
     <div id="right-panel" class="right-panel">
       
-        <!-- Content -->
         <div class="content">
         
+                   @yield('admin')
            </div>
         <!-- /.content -->
         <div class="clearfix"></div>

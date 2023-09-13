@@ -17,3 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/admin', [\App\Http\Controllers\AdminController::class,'index']); 
+ //Syarat Dan Ketentuan Dari Admin
+ Route::get('/terms-and-conditions', [TermsConditionController::class,'index'])->name('syarat-dan-ketentuan');
+ Route::post('/terms-and-conditions', [TermsConditionController::class,'update'])->name('syarat-dan-ketentuan.update');
