@@ -1,7 +1,8 @@
  @extends('layouts.template')
 
 @section('admin')
-        
+        <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
                     <div class="animated fadeIn">
                         <div class="row">
 
@@ -36,7 +37,15 @@
                     </div>
                 </div>
            </div>
-               <script src="vendors/text_editor/summernote-bs4.js'"></script>
 
            
+ <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+            <script>
+            @if (Session::has('success'))
+                toastr.success("{{ Session::get('success') }}")
+            @endif
+        </script>
+    
+       
 @endsection
