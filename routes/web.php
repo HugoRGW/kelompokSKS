@@ -2,6 +2,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TermsConditionController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\HomeController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -15,3 +16,4 @@ Route::get('/category', [CategoryController::class, 'index'])->name('kategori');
 Route::get('/category/create', [CategoryController::class, 'create'])->name('kategori.create');
 Route::post('/category/store', [CategoryController::class, 'store'])->name('kategori.store');
 Route::delete('/category/{id}', [CategoryController::class, 'destroy'])->name('kategori.destroy');
+Route::get('/home',[HomeController::class, 'index'])->name('home');
