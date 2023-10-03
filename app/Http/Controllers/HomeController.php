@@ -10,4 +10,24 @@ class HomeController extends Controller
     {
         return view('User/home');
     }
+
+    public function artikel()
+    {
+        return view('User/artikel');
+    }
+
+    public function tentang()
+    {
+        return view('User/tentang');
+    }
+
+    public function about()
+    {
+        return view('User/about');
+    }
+
+    public function contact()
+    {
+        return view('User/contact');
+    }
 }

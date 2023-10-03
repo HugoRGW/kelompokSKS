@@ -63,12 +63,12 @@
 
           <ul class="site-menu js-clone-nav d-none d-md-block">
             <li><a href="index.html">Beranda</a></li>
-            <li><a href="news.html">Artikel</a> </li>
-            <li><a href="matches.html">Tentang</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="contact.html" class="btn btn-primary text-light">Masuk</a></li> 
-            <li><a href="contact.html" class="btn btn-light text-dark" >Daftar</a></li>
+            <li><a href="/artikel">Artikel</a> </li>
+            <li><a href="/tentang">Tentang</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="" class="btn btn-primary text-light">Masuk</a></li> 
+            <li><a href="" class="btn btn-light text-dark" >Daftar</a></li>
           </ul>
         </div>
       </nav>
