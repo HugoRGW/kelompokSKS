@@ -18,6 +18,5 @@ Route::post('/category/store', [CategoryController::class, 'store'])->name('kate
 Route::delete('/category/{id}', [CategoryController::class, 'destroy'])->name('kategori.destroy');
 Route::get('/home',[HomeController::class, 'index'])->name('home');
 Route::get('/artikel',[App\Http\Controllers\HomeController::class,'artikel']);
-Route::get('/tentang',[App\Http\Controllers\HomeController::class,'tentang']);
 Route::get('/about',[App\Http\Controllers\HomeController::class,'about']);
 Route::get('/contact',[App\Http\Controllers\HomeController::class,'contact']);
