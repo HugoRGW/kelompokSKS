@@ -25,7 +25,7 @@
                      </a>
                  </li>
                  <li>
-                     <a href="widgets.html"> <i class="menu-icon ti-id-badge"></i>Data Pribadi </a>
+                     <a href="{{ route('syarat-dan-ketentuan') }}"> <i class="menu-icon ti-id-badge"></i>Personal Information</a>
                  </li>
              </ul>
          </div><!-- /.navbar-collapse -->
