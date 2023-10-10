@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Info;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -28,6 +29,8 @@ class HomeController extends Controller
 
     public function contact()
     {
-        return view('User/contact');
+        $info = Info::all();
+
+        return view('User/contact', compact('info'));
     }
 }
