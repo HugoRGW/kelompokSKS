@@ -2,6 +2,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TermsConditionController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\DataAdminController;
 use App\Http\Controllers\HomeController;
 
 Route::get('/', function () {
@@ -16,6 +17,13 @@ Route::get('/category', [CategoryController::class, 'index'])->name('kategori');
 Route::get('/category/create', [CategoryController::class, 'create'])->name('kategori.create');
 Route::post('/category/store', [CategoryController::class, 'store'])->name('kategori.store');
 Route::delete('/category/{id}', [CategoryController::class, 'destroy'])->name('kategori.destroy');
+
+//Personal Information
+Route::get('/personal', [DataAdminController::class, 'index'])->name('personal.information');
+Route::put('updata',[DataAdminController::class,'updata']);
+
+
+
 Route::get('/home',[HomeController::class, 'index'])->name('home');
 Route::get('/artikel',[App\Http\Controllers\HomeController::class,'artikel']);
 Route::get('/about',[App\Http\Controllers\HomeController::class,'about']);
