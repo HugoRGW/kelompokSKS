@@ -76,7 +76,7 @@
       <div class="container">
         <div class="row align-items-center justify-content-start">
           <div class="col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="400">
-            <h1 class="bg-text-line">News</h1>
+            <h1 class="bg-text-line">Artikel</h1>
             <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maxime velit nostrum praesentium voluptatem. Mollitia perferendis dolore dolores.</p>
           </div>
         </div>
@@ -92,8 +92,8 @@
                 <img src="images/img_1.jpg" alt="Image" class="img-fluid">
               </div>
               <div class="text p-4">
-                <h2 class="h5 text-black"><a href="#">RealMad vs Striker Who Will Win?</a></h2>
-                <span class="text-uppercase date d-block mb-3"><small>By Colorlib &bullet; Sep 25, 2018</small></span>
+                <h2 class="h5 text-black"><a href="/">Basket</a></h2>
+                <span class="text-uppercase date d-block mb-3"><small>Jum'at,14.30</small></span>
                 <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat beatae doloremque, ex corrupti perspiciatis.</p>
               </div>
             </div>
