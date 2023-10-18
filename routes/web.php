@@ -3,6 +3,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TermsConditionController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DataAdminController;
+use App\Http\Controllers\EkskulController;
 use App\Http\Controllers\HomeController;
 
 Route::get('/', function () {
@@ -28,3 +29,6 @@ Route::get('/home',[HomeController::class, 'index'])->name('home');
 Route::get('/artikel',[App\Http\Controllers\HomeController::class,'artikel']);
 Route::get('/about',[App\Http\Controllers\HomeController::class,'about']);
 Route::get('/contact',[App\Http\Controllers\HomeController::class,'contact']);
+
+//ekskul
+route::get('/basket',[App\Http\Controllers\EkskulControlller::class,'basket'])->name('basket');

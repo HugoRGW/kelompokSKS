@@ -89,10 +89,10 @@
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="post-entry">
               <div class="image">
-                <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+                <img src="images/overtime-header.jpg" alt="Image" class="img-fluid">
               </div>
               <div class="text p-4">
-                <h2 class="h5 text-black"><a href="/">Basket</a></h2>
+                <h2 class="h5 text-black"><a href="{{route('basket')}}">Basket</a></h2>
                 <span class="text-uppercase date d-block mb-3"><small>Jum'at,14.30</small></span>
                 <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat beatae doloremque, ex corrupti perspiciatis.</p>
               </div>
