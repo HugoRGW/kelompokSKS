@@ -27,6 +27,9 @@
                  <li>
                      <a href="widgets.html"> <i class="menu-icon ti-id-badge"></i>Data Pribadi </a>
                  </li>
+                 <li>
+                    <a href="{{ route('tambah-user') }}"> <i class="menu-icon ti-plus"></i>Tambah User </a>
+                </li>
              </ul>
          </div><!-- /.navbar-collapse -->
      </nav>
