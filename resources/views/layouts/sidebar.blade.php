@@ -25,7 +25,7 @@
                      </a>
                  </li>
                  <li>
-                     <a href="widgets.html"> <i class="menu-icon ti-id-badge"></i>Data Pribadi </a>
+                     <a href="{{ route('personal.information') }}"> <i class="menu-icon ti-id-badge"></i>Personal Information</a>
                  </li>
                  <li>
                     <a href="{{ route('tambah-user') }}"> <i class="menu-icon ti-plus"></i>Tambah User </a>
