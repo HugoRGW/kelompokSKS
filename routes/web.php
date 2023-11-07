@@ -32,6 +32,8 @@ Route::group(['middleware' => 'role:3'], function () {
     Route::post('/add-user/create', [AddUserController::class, 'create'])->name('tambah-user.create');
     Route::put('/update-user/{id}', [AddUserController::class, 'update'])->name('update-user');
     Route::delete('/delete-user/{id}', [AddUserController::class, 'destroy'])->name('delete-user');
+    // Data User
+    
 });
 
 //Personal Information

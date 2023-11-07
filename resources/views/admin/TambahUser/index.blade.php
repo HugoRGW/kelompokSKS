@@ -3,7 +3,9 @@
 @section('admin')
     <div class="col-lg-12">
         <div class="card">
-            <div class="card-header">Tambah User</div>
+            <div class="card-header">
+                <strong class="card-title">Tambah User</strong>
+            </div>
             <div class="card-body card-block">
                 @if ($errors->any())
                     <div class="alert alert-danger alert-dismissible">
