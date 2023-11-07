@@ -101,7 +101,7 @@
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="post-entry">
               <div class="image">
-                <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+                <img src="images/bdiku.jpeg" alt="Image" class="img-fluid">
               </div>
               <div class="text p-4">
                 <h2 class="h5 text-black"><a href="#">RealMad vs Striker Who Will Win?</a></h2>

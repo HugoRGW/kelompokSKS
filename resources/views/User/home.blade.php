@@ -70,7 +70,7 @@
             <li><a href="/artikel">Artikel</a> </li>
             <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
-            <li><a href="" class="btn btn-primary text-light">Masuk</a></li> 
+            <li><a href="{{ route('login') }}" class="btn btn-primary text-light">Masuk</a></li> 
             <li><a href="" class="btn btn-light text-dark" >Daftar</a></li>
           </ul>
         </div>
