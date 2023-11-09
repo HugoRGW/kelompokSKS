@@ -66,7 +66,7 @@
           <div class="d-inline-block d-md-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
 
           <ul class="site-menu js-clone-nav d-none d-md-block">
-            <li><a href="/home">Beranda</a></li>
+            <li><a href="/">Beranda</a></li>
             <li><a href="/artikel">Artikel</a> </li>
             <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
