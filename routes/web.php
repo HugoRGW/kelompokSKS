@@ -43,3 +43,11 @@ Route::get('/contact',[App\Http\Controllers\HomeController::class,'contact']);
 
 //ekskul
 route::get('/basket',[App\Http\Controllers\EkskulControlller::class,'basket'])->name('basket');
+route::get('/bdi',[App\Http\Controllers\EkskulControlller::class,'bdi'])->name('bdi');
+route::get('/bahasajepang',[App\Http\Controllers\EkskulControlller::class,'bahasajepang'])->name('bahasajepang');
+route::get('/pramuka',[App\Http\Controllers\EkskulControlller::class,'pramuka'])->name('pramuka');
+route::get('/webdesign',[App\Http\Controllers\EkskulControlller::class,'webdesign'])->name('webdesign');
+route::get('/voli',[App\Http\Controllers\EkskulControlller::class,'voli'])->name('voli');
+route::get('/band',[App\Http\Controllers\EkskulControlller::class,'band'])->name('band');
+route::get('/pecintaalam',[App\Http\Controllers\EkskulControlller::class,'pecintaalam'])->name('pecintaalam');
+route::get('/robotik',[App\Http\Controllers\EkskulControlller::class,'robotik'])->name('robotik');
