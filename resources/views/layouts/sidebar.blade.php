@@ -15,7 +15,10 @@
                         </ul>
                     </li> --}}
                  <li>
-                     <a href="widgets.html"> <i class="menu-icon ti-user"></i>Data User </a>
+                     <a href="{{ route('tambah-user') }}"> <i class="menu-icon ti-plus"></i>Tambah User </a>
+                 </li>
+                 <li>
+                     <a href="{{ route('data-user') }}"> <i class="menu-icon ti-user"></i>Data User </a>
                  </li>
                  <li>
                      <a href="{{ route('kategori') }}"> <i class="menu-icon ti-tag"></i>Data Kategori </a>
@@ -27,9 +30,6 @@
                  <li>
                      <a href="{{ route('personal.information') }}"> <i class="menu-icon ti-id-badge"></i>Personal Information</a>
                  </li>
-                 <li>
-                    <a href="{{ route('tambah-user') }}"> <i class="menu-icon ti-plus"></i>Tambah User </a>
-                </li>
              </ul>
          </div><!-- /.navbar-collapse -->
      </nav>

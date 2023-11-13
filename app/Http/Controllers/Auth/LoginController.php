@@ -22,11 +22,8 @@ class LoginController extends Controller
 
     protected function authenticated(Request $request, $user)
     {
-        if ($user->role_id == 3) {
-            return redirect()->route('admin');
-        } elseif ($user->role_id == 1) {
-            return redirect()->route('home');
-        }
+
+        return redirect()->route('home');
     }
 
     public function login(Request $request)
@@ -47,11 +44,7 @@ class LoginController extends Controller
         }
 
         if (Auth::attempt($credentials)) {
-            if ($user->role_id == 3) {
-                return redirect()->route('admin');
-            } elseif ($user->role_id == 1) {
-                return redirect()->route('home');
-            }
+            return redirect()->route('home');
         }
 
         return redirect('login')->withErrors([

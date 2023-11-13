@@ -70,7 +70,36 @@
             <li><a href="/artikel">Artikel</a> </li>
             <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
-            <li><a href="{{ route('login') }}" class="btn btn-primary text-light">Masuk</a></li> 
+            @if (Route::has('login'))
+              @auth
+              <li>
+                <div class="dropdown">
+                      <button class="btn btn-primary text-light dropdown-toggle" type="button" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          @if(Auth::user()->role_id == 1)
+                            Siswa
+                          @elseif(Auth::user()->role_id == 2)
+                            Operator
+                          @else
+                            Admin
+                          @endif
+                      </button>
+                  <div class="dropdown-menu" aria-labelledby="userDropdown">
+                    @if (Auth::user()->role_id == '1')
+                    @elseif (Auth::user()->role_id == '2')
+                    @else
+                      <a class="dropdown-item" href="{{ route('admin') }}">Admin Page</a>
+                    @endif
+                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                      @csrf
+                    </form>
+                  </div>
+                </div>
+              </li>
+              @else
+                <li><a href="{{ route('login') }}" class="btn btn-primary text-light">Masuk</a></li>
+              @endauth
+            @endif
           </ul>
         </div>
       </nav>
