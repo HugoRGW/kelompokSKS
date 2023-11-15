@@ -13,6 +13,7 @@ use App\Http\Controllers\DataAdminController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\TermsConditionController;
 use App\Models\Contact;
+use App\Http\Controllers\PhotoController;
 
 Auth::routes();
 
@@ -61,3 +62,5 @@ route::get('/voli', [App\Http\Controllers\EkskulControlller::class, 'voli'])->na
 route::get('/band', [App\Http\Controllers\EkskulControlller::class, 'band'])->name('band');
 route::get('/pecintaalam', [App\Http\Controllers\EkskulControlller::class, 'pecintaalam'])->name('pecintaalam');
 route::get('/robotik', [App\Http\Controllers\EkskulControlller::class, 'robotik'])->name('robotik');
+
+route::get('/foto',[App\Http\Controllers\PhotoController::class,'index'])->name('foto');
