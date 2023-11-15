@@ -42,7 +42,7 @@ Route::group(['middleware' => 'role:3'], function () {
     Route::post('/report', [ContactController::class, 'report'])->name('report');
     Route::get('/report-data', [ContactController::class, 'reportData'])->name('report-data');
     Route::get('/filter-data', [ContactController::class, 'search'])->name('filter-data');
-    Route::delete('/delete-user/{id}', [ContactController::class, 'destroy'])->name('delete-data');
+    Route::delete('/delete-data/{id}', [ContactController::class, 'destroy'])->name('delete-data');
 });
 
 //Personal Information

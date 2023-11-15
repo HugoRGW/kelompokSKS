@@ -91,12 +91,12 @@
               @csrf
               
               <div class="p-3 p-lg-5 border">
+                <h3>Form Pengaduan</h3>
                 <input type="hidden" class="form-control" id="c_fname" name="c_fname" value="{{ Auth::user()->name }}">
                 <input type="hidden" class="form-control" id="c_email" name="c_email" value="{{ Auth::user()->email }}">
                 <div class="form-group row">
                   <div class="col-md-12">
-                    <label for="c_message" class="text-black">Message </label>
-                    <textarea name="c_message" id="c_message" cols="30" rows="7" class="form-control"></textarea>
+                    <textarea name="c_message" id="c_message" cols="30" rows="7" class="form-control" placeholder="Jika anda menemukan masalah atau bug di dalam website ini silahkan laporkan di sini"></textarea>
                   </div>
                 </div>
                 <div class="form-group row">
