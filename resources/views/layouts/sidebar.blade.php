@@ -30,6 +30,9 @@
                  <li>
                      <a href="{{ route('personal.information') }}"> <i class="menu-icon ti-id-badge"></i>Personal Information</a>
                  </li>
+                 <li>
+                    <a href="{{ route('report-data') }}"> <i class="menu-icon ti-alert"></i>Data Laporan</a>
+                </li>
              </ul>
          </div><!-- /.navbar-collapse -->
      </nav>

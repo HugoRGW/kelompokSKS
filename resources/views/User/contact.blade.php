@@ -87,32 +87,12 @@
       <div class="container">
         <div class="row align-items-first">
           <div class="col-md-7">
-            <form action="#" method="post" class="bg-white">
+            <form action="{{ route('report') }}" method="post" class="bg-white">
+              @csrf
               
               <div class="p-3 p-lg-5 border">
-                <div class="form-group row">
-                  <div class="col-md-6">
-                    <label for="c_fname" class="text-black">First Name <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="c_fname" name="c_fname">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="c_lname" class="text-black">Last Name <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="c_lname" name="c_lname">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-md-12">
-                    <label for="c_email" class="text-black">Email <span class="text-danger">*</span></label>
-                    <input type="email" class="form-control" id="c_email" name="c_email" placeholder="">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-md-12">
-                    <label for="c_subject" class="text-black">Subject </label>
-                    <input type="text" class="form-control" id="c_subject" name="c_subject">
-                  </div>
-                </div>
-
+                <input type="hidden" class="form-control" id="c_fname" name="c_fname" value="{{ Auth::user()->name }}">
+                <input type="hidden" class="form-control" id="c_email" name="c_email" value="{{ Auth::user()->email }}">
                 <div class="form-group row">
                   <div class="col-md-12">
                     <label for="c_message" class="text-black">Message </label>

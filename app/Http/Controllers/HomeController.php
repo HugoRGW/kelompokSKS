@@ -28,11 +28,4 @@ class HomeController extends Controller
     {
         return view('User/about');
     }
-
-    public function contact()
-    {
-        $info = Info::all();
-
-        return view('User/contact', compact('info'));
-    }
 }

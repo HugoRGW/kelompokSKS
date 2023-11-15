@@ -4,13 +4,15 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\EkskulController;
 use App\Http\Controllers\AddUserController;
-use App\Http\Controllers\DataUserController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\DataUserController;
+use App\Http\Controllers\DataAdminController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\TermsConditionController;
-use App\Http\Controllers\DataAdminController;
-use App\Http\Controllers\EkskulController;
+use App\Models\Contact;
 
 Auth::routes();
 
@@ -35,6 +37,12 @@ Route::group(['middleware' => 'role:3'], function () {
     Route::get('/filter-user', [DataUserController::class, 'search'])->name('filter-user');
     Route::put('/update-user/{id}', [DataUserController::class, 'update'])->name('update-user');
     Route::delete('/delete-user/{id}', [DataUserController::class, 'destroy'])->name('delete-user');
+    // Halaman Kontak
+    Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+    Route::post('/report', [ContactController::class, 'report'])->name('report');
+    Route::get('/report-data', [ContactController::class, 'reportData'])->name('report-data');
+    Route::get('/filter-data', [ContactController::class, 'search'])->name('filter-data');
+    Route::delete('/delete-user/{id}', [ContactController::class, 'destroy'])->name('delete-data');
 });
 
 //Personal Information
@@ -42,7 +50,6 @@ Route::get('/personal', [DataAdminController::class, 'index'])->name('personal.i
 Route::put('updata', [DataAdminController::class, 'updata']);
 Route::get('/artikel', [App\Http\Controllers\HomeController::class, 'artikel']);
 Route::get('/about', [App\Http\Controllers\HomeController::class, 'about']);
-Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact']);
 
 //ekskul
 route::get('/basket', [App\Http\Controllers\EkskulControlller::class, 'basket'])->name('basket');
