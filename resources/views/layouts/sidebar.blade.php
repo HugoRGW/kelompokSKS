@@ -33,6 +33,9 @@
                  <li>
                     <a href="{{ route('report-data') }}"> <i class="menu-icon ti-alert"></i>Data Laporan</a>
                 </li>
+                <li>
+                     <a href="{{ route('foto') }}"> <i class="menu-icon ti-image"></i>Data Image</a>
+                 </li>
              </ul>
          </div><!-- /.navbar-collapse -->
      </nav>
