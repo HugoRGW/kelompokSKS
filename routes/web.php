@@ -14,6 +14,8 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\TermsConditionController;
 use App\Models\Contact;
 use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\PostinganController;
+
 
 Auth::routes();
 
@@ -44,6 +46,13 @@ Route::group(['middleware' => 'role:3'], function () {
     Route::get('/report-data', [ContactController::class, 'reportData'])->name('report-data');
     Route::get('/filter-data', [ContactController::class, 'search'])->name('filter-data');
     Route::delete('/delete-data/{id}', [ContactController::class, 'destroy'])->name('delete-data');
+    // Halaman Postingan
+    route::get('/postingan', [PostinganController::class, 'postingan'])->name('postingan');
+    Route::post('/diterima', [PostinganController::class, 'diterima'])->name('diterima');
+    Route::post('/ditolak/{id}', [PostinganController::class, 'ditolak'])->name('ditolak');
+    Route::get('/terima', [PostinganController::class, 'terima'])->name('terima');
+    route::get('/deletepost/{id}', [PostinganController::class, 'deletepost'])->name('deletepost');
+
 });
 
 //Personal Information
@@ -64,3 +73,13 @@ route::get('/pecintaalam', [App\Http\Controllers\EkskulControlller::class, 'peci
 route::get('/robotik', [App\Http\Controllers\EkskulControlller::class, 'robotik'])->name('robotik');
 
 route::get('/foto',[App\Http\Controllers\PhotoController::class,'index'])->name('foto');
+
+route::get('/posts/{id}', [PostinganController::class, 'posts'])->name('posts');
+route::get('/pending/{id}',[App\Http\Controllers\PostinganController::class,'pending'])->name('pending');
+Route::get('/tolak/{id}', [PostinganController::class, 'tolak'])->name('tolak');
+route::get('/tambah-postingan',[App\Http\Controllers\PostinganController::class,'tambah'])->name('tambah.postingan');
+route::post('/insertdatapost', [PostinganController::class, 'insertdatapost'])->name('insert.postingan');
+route::get('/tampilkandatapostingan/{id}', [PostinganController::class, 'tampilkandatapostingan'])->name('tampilkandatapostingan');
+route::post('/updt/{id}', [PostinganController::class, 'updt'])->name('updt');
+route::get('/deletepostingan/{id}', [PostinganController::class, 'deletepostingan'])->name('deletepostingan');
+Route::get('/show/{id}', [PostinganController::class, 'show'])->name('show');

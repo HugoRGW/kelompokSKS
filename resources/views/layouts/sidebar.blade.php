@@ -36,6 +36,12 @@
                 <li>
                      <a href="{{ route('foto') }}"> <i class="menu-icon ti-image"></i>Data Image</a>
                  </li>
+                 <li>
+                     <a href="{{ route('terima') }}"> <i class="menu-icon ti-pencil-alt"></i>Data Postingan</a>
+                 </li>
+                 <li>
+                     <a href="{{ route('postingan') }}"> <i class="menu-icon ti-time"></i>Postingan Pending</a>
+                 </li>
              </ul>
          </div><!-- /.navbar-collapse -->
      </nav>
