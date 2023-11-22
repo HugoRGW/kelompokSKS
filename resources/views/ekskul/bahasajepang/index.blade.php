@@ -72,12 +72,12 @@
       </nav>
     </header>
   
-    <div class="site-blocks-cover overlay" style="background-image: url(images/overtime-header.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover overlay" style="background-image: url(images/jepangku.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-start">
           <div class="col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="400">
-            <h1 class="bg-text-line">Basket</h1>
-            <p class="mt-4">Jadwal Latihan Jum'at,14:30</p>
+            <h1 class="bg-text-line">Bahasa Jepang</h1>
+            <p class="mt-4">Jadwal</p>
           </div>
         </div>
       </div>
@@ -89,11 +89,10 @@
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="post-entry">
               <div class="image">
-                <img src="images/overtime-header.jpg" alt="Image" class="img-fluid">
+                <img src="images/jepangku.jpg" alt="Image" class="img-fluid">
               </div>
               <div class="text p-4">
-                <h2 class="h5 text-black"><a>Basket</a></h2>
-                <span class="text-uppercase date d-block mb-3"><small>Jum'at,14.30</small></span>
+                <h2 class="h5 text-black"><a>Demo Ekskul</a></h2>
                 <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat beatae doloremque, ex corrupti perspiciatis.</p>
               </div>
             </div>

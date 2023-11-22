@@ -59,7 +59,6 @@ Route::group(['middleware' => 'role:3'], function () {
 Route::get('/personal', [DataAdminController::class, 'index'])->name('personal.information');
 Route::put('updata', [DataAdminController::class, 'updata']);
 Route::get('/artikel', [App\Http\Controllers\HomeController::class, 'artikel']);
-Route::get('/about', [App\Http\Controllers\HomeController::class, 'about']);
 
 //ekskul
 route::get('/basket', [App\Http\Controllers\EkskulControlller::class, 'basket'])->name('basket');

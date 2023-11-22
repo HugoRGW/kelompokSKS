@@ -38,8 +38,7 @@
 
           <ul class="site-menu js-clone-nav d-none d-md-block">
             <li><a href="/">Beranda</a></li>
-            <li><a href="/artikel">Artikel</a> </li>
-            <li><a href="/about">About</a></li>
+            <li><a href="/artikel">Artikel</a></li>
             <li><a href="/contact">Contact</a></li>
             @if (Route::has('login'))
               @auth
