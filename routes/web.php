@@ -83,3 +83,5 @@ route::get('/tampilkandatapostingan/{id}', [PostinganController::class, 'tampilk
 route::post('/updt/{id}', [PostinganController::class, 'updt'])->name('updt');
 route::get('/deletepostingan/{id}', [PostinganController::class, 'deletepostingan'])->name('deletepostingan');
 Route::get('/show/{id}', [PostinganController::class, 'show'])->name('show');
+
+Route::get('/lainnya', [PostinganController::class, 'lainnya'])->name('lainnya');

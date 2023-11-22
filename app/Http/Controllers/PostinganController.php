@@ -305,4 +305,21 @@ $unreadCount = count($notifications);
           return view('ketua.show', compact('data','unreadCount','unreadCount'));
     }
 
+    public function lainnya(Request $request)
+    {
+        $cari =$request->cari;
+        $data=postingan::where('kategori_id', '=', '4');
+        $kat = Category::all()->take(3);
+        $kategori = Category::query()
+        ->where('nama', 'LIKE', '%'.$cari.'%')
+        ->paginate();
+
+        $notifications = DB::table('deleted_posts')
+    ->where('user_id', Auth::id())
+    ->whereNull('read_at')
+    ->get();
+    $unreadCount = count($notifications);
+        return view('user.lainnya', compact( 'kat','kategori','data','unreadCount'));
+    }
+
 }
